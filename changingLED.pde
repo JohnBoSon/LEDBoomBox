@@ -66,15 +66,8 @@ if (sensorValue>superMegaUltraImportantAwesomeOmegaVar){  //The 'silence' sensor
     Serial.println(gb);
     Serial.println(""); 
 
-    //added
   if (gradient > 1529) {
-
     gradient %= 1530;
-
-    //Everytime a palette gets completed is a good time to readjust "maxVol," just in case
-    //  the song gets quieter; we also don't want to lose brightness intensity permanently 
-    //  because of one stray loud sound.
-//    maxVol = (maxVol + volume) / 2.0;
   }
 
 
